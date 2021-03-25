@@ -23,7 +23,7 @@ val = Math.min(2, 23, 56, 2, 8, 45, 23, 6, 99, 12, 1, -56);
 val = Math.max(2, 23, 56, 2, 8, 45, 23, 6, 99, 12, 1, -56);
 val = Math.random();
 
-val = Math.floor(Math.random() * 10 + 1);
+val = Math.floor(Math.random() * 20 + 1);
 
 // Output
 console.log(val);
