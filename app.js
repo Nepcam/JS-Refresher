@@ -1,29 +1,19 @@
-// Numbers & The Math Object
-const num1 = 100;
-const num2 = 50;
+const firstName = 'Cameron';
+const lastName = 'Nepe';
+const age = 44;
+
 let val;
 
-// Simple Math with numbers
-val = num1 + num2;
-val = num1 * num2;
-val = num1 - num2;
-val = num1 / num2;
-val = num1 % num2;
+val = firstName + lastName;
 
-// Math Object
-val = Math.PI;
-val = Math.E;
-val = Math.round(2.4);
-val = Math.ceil(2.4);
-val = Math.floor(2.8);
-val = Math.sqrt(64);
-val = Math.abs(-3);
-val = Math.pow(8, 2);
-val = Math.min(2, 23, 56, 2, 8, 45, 23, 6, 99, 12, 1, -56);
-val = Math.max(2, 23, 56, 2, 8, 45, 23, 6, 99, 12, 1, -56);
-val = Math.random();
+// Concatenation
+val = firstName + ' ' + lastName;
 
-val = Math.floor(Math.random() * 20 + 1);
+// Append
+val = 'John ';
+val += 'Doe';
+
+val = 'Kia ora, my name is ' + firstName + ' and I am ' + age;
 
 // Output
 console.log(val);
