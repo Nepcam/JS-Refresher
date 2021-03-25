@@ -1,35 +1,41 @@
-// Primitive
+// Type Conversion
 
-// String
-const name = 'John Doe';
-// Number
-const age = 44;
-// Booleon
-const hasKids = true;
-// Null
-const bike = null;
-// Undefined
-let test;
-// Symbol
-const sym = Symbol();
+let val;
 
-console.log(typeof name);
-console.log(typeof age);
-console.log(typeof hasKids);
-console.log(typeof bike);
-console.log(typeof test);
-console.log(typeof sym);
+// Number to String
+val = String(555);
+val = String(4 + 4);
+// Bool to String
+val = String(true);
+// Date to string
+val = String(new Date());
+// Array to string
+val = String([1, 2, 3, 4]);
 
-// Reference Types - Objects
-// Array
-const hobbies = ['waka ama', 'crossfit', 'kapa haka'];
-// Object Literal
-const address = {
-  city: 'Hamilton',
-  suburb: 'Hamilton East',
-};
-const today = new Date();
+// toString()
+val = (5).toString();
+val = true.toString();
 
-console.log(typeof hobbies);
-console.log(typeof address);
-console.log(typeof today);
+// String to number
+val = Number('5');
+val = Number(true);
+val = Number(false);
+val = Number(null);
+val = Number('hello');
+val = Number([1, 2, 3]);
+
+val = parseInt('100.30');
+val = parseFloat('100.30');
+
+// Output
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.length);
+// console.log(val.toFixed(2));
+
+const val1 = String(5);
+const val2 = 6;
+const sum = val1 + val2;
+console.log(sum);
+console.log(typeof sum);
+// Type coercion is the automatic or implicit conversion of values from one data type to another (such as strings to numbers)
