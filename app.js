@@ -1,41 +1,29 @@
-// Type Conversion
-
+// Numbers & The Math Object
+const num1 = 100;
+const num2 = 50;
 let val;
 
-// Number to String
-val = String(555);
-val = String(4 + 4);
-// Bool to String
-val = String(true);
-// Date to string
-val = String(new Date());
-// Array to string
-val = String([1, 2, 3, 4]);
+// Simple Math with numbers
+val = num1 + num2;
+val = num1 * num2;
+val = num1 - num2;
+val = num1 / num2;
+val = num1 % num2;
 
-// toString()
-val = (5).toString();
-val = true.toString();
+// Math Object
+val = Math.PI;
+val = Math.E;
+val = Math.round(2.4);
+val = Math.ceil(2.4);
+val = Math.floor(2.8);
+val = Math.sqrt(64);
+val = Math.abs(-3);
+val = Math.pow(8, 2);
+val = Math.min(2, 23, 56, 2, 8, 45, 23, 6, 99, 12, 1, -56);
+val = Math.max(2, 23, 56, 2, 8, 45, 23, 6, 99, 12, 1, -56);
+val = Math.random();
 
-// String to number
-val = Number('5');
-val = Number(true);
-val = Number(false);
-val = Number(null);
-val = Number('hello');
-val = Number([1, 2, 3]);
-
-val = parseInt('100.30');
-val = parseFloat('100.30');
+val = Math.floor(Math.random() * 10 + 1);
 
 // Output
-// console.log(val);
-// console.log(typeof val);
-// console.log(val.length);
-// console.log(val.toFixed(2));
-
-const val1 = String(5);
-const val2 = 6;
-const sum = val1 + val2;
-console.log(sum);
-console.log(typeof sum);
-// Type coercion is the automatic or implicit conversion of values from one data type to another (such as strings to numbers)
+console.log(val);
